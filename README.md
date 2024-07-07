@@ -94,11 +94,10 @@ decorations = "Buttonless"
 opacity = 0.8
 blur = true
 option_as_alt = "Both"
-position.x = 200
 
 [window.dimensions]
-columns = 110
-lines = 25
+columns = 200
+lines = 35
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
@@ -172,11 +171,10 @@ decorations = "Buttonless"
 opacity = 0.8
 blur = true
 option_as_alt = "Both"
-position.x = 200
 
 [window.dimensions]
-columns = 110
-lines = 25
+columns = 200
+lines = 35
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
