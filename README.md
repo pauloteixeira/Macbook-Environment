@@ -19,6 +19,7 @@
 - - Show battery percentage
   - Drag window with three fingers
   - Remove mount external drive icon from desktop
+- Install NodeJs
 
 ### Add shell function to VSCode
 - Press F1
@@ -303,7 +304,24 @@ Choose Apple menu > System Settings, then click Control Center in the sidebar.
 - Uncheck External disks under "Show these items on the desktop."
 <img width="381" alt="Screenshot 2024-07-07 at 15 04 27" src="https://github.com/pauloteixeira/Macbook-Environment/assets/144756/e9bcfcbf-7eb9-430c-9c7f-87aa44513166">
 
+## Install NodeJS
+Verify in the [package manager page](https://nodejs.org/en/download/package-manager) how is the current LTE Version
+```bash
+# installs nvm (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
+# reload zshrc
+source ~/.zshrc
+
+# download and install Node.js (you may need to restart the terminal)
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.15.0`
+
+# verifies the right NPM version is in the environment
+npm -v # should print `10.7.0`
+```
 
 
 
