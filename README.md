@@ -14,6 +14,11 @@
 - eza (better ls)
 - zoxide (better cd)
 - TMUX
+- Install PHP 8.3
+- Mac Configs
+- - Show battery percentage
+  - Drag window with three fingers
+  - Remove mount external drive icon from desktop
 
 ### Add shell function to VSCode
 - Press F1
@@ -253,10 +258,6 @@ Save and then run:
 source ~/.zshrc
 ```
 
-### Install TMUX
-```bash
-brew install tmux
-```
 
 ### Configure initialization
 ```bash
@@ -272,6 +273,38 @@ Change the value of this variable to off:
 ```bash
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 ```
+Restart the Alacritty.
 This line will fix the error on terminal initialization
+
+### Install TMUX
+```bash
+brew install tmux
+```
+
+### Install PHP
+```bash
+brew intall php@8.3
+```
+
+## Mac Configs
+### Show battery percebtagen
+Choose Apple menu > System Settings, then click Control Center in the sidebar. 
+<img width="717" alt="Screenshot 2024-07-07 at 14 26 15" src="https://github.com/pauloteixeira/Macbook-Environment/assets/144756/8c762863-f6a5-4dbc-8b54-42e2d9d854bb">
+
+### Drag window with three fingers
+- Choose Apple menu  > System Settings (or System Preferences).
+- Click Accessibility.
+- Click Pointer Control (or Mouse & Trackpad).
+- Click the Trackpad Options button.
+- Turn on “Use trackpad for dragging” (or “Enable dragging”).
+
+### Remove mounted external drivers from desktop
+- Open Finder, and click Finder next to the Apple logo.
+- Choose Settings from the drop-down menu.
+- Click the General tab on the Finder Settings window.
+- Uncheck External disks under "Show these items on the desktop."
+https://iboysoft.com/images/en-news/hide-external-drive-from-mac-desktop/hide-external-drive-from-mac-desktop.png![image](https://github.com/pauloteixeira/Macbook-Environment/assets/144756/d3c30a10-17db-4440-8bf8-64d2d8b78900)
+
+
 
 You’re Done!! 🚀
