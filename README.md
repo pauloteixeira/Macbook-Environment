@@ -98,11 +98,11 @@ position.x = 200
 
 [window.dimensions]
 columns = 110
-lines = 20
+lines = 25
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
-size = 19
+size = 12
 ```
 
 ### Install Powerlevel10k
@@ -176,11 +176,11 @@ position.x = 200
 
 [window.dimensions]
 columns = 110
-lines = 20
+lines = 25
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
-size = 19
+size = 12
 ```
 
 ### Better zsh history completion with up, down arrows
