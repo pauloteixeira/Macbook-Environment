@@ -303,7 +303,9 @@ Choose Apple menu > System Settings, then click Control Center in the sidebar.
 - Choose Settings from the drop-down menu.
 - Click the General tab on the Finder Settings window.
 - Uncheck External disks under "Show these items on the desktop."
-https://iboysoft.com/images/en-news/hide-external-drive-from-mac-desktop/hide-external-drive-from-mac-desktop.png![image](https://github.com/pauloteixeira/Macbook-Environment/assets/144756/d3c30a10-17db-4440-8bf8-64d2d8b78900)
+<img width="381" alt="Screenshot 2024-07-07 at 15 04 27" src="https://github.com/pauloteixeira/Macbook-Environment/assets/144756/e9bcfcbf-7eb9-430c-9c7f-87aa44513166">
+
+
 
 
 
