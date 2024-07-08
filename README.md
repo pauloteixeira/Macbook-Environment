@@ -20,11 +20,43 @@
   - Drag window with three fingers
   - Remove mount external drive icon from desktop
 - Install NodeJs
+- Generate SSH Key
 
 ### Add shell function to VSCode
 - Press F1
 - Type: shell
 - Install option: Install 'code' command to PATH
+
+### VSCode extensions
+- Code Runner
+- Dracula Official
+- PHP Inteliphense
+- PHP Extension Pack
+- PHP Debug
+- Laravel Extra Intelisense
+- Prettier - Code formatter (See installations below)
+- Git History
+- GitLens
+- Markdown Preview Enhanced
+
+### Install Prettier
+Install Prettier and enable "format on save" Settings>Settings Type format and check the item to format when save.
+In your projects create some file .eslintrc.json and past the configurations below:
+```json
+{
+    "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off"
+    }
+}
+```
+
 
 ### Install Homebrew
 ```bash
@@ -229,7 +261,7 @@ Create this alias in the bottom of the ~/.zshrc file
 ```bash
 nvim ~/.zshrc
 ```
-And type the content bellow:
+And type the content below:
 ```bash
 # ---- Eza (better ls) -----
 
@@ -244,7 +276,7 @@ Create this alias in the bottom of the ~/.zshrc file
 ```bash
 nvim ~/.zshrc
 ```
-And type the content bellow:
+And type the content below:
 ```bash
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
@@ -323,6 +355,10 @@ node -v # should print `v20.15.0`
 npm -v # should print `10.7.0`
 ```
 
+## Generate SSH Key
+```bash
+ssh-keygen -t rsa -b 4096 -C "pauloaugustot@gmail.com"
+``
 
 
 You’re Done!! 🚀
