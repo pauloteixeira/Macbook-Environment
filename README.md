@@ -2,6 +2,7 @@
 
 ## Requirements
 - Vscode Conf
+- Azure Data Studio
 - Homebrew
 - Oh My Zsh
 - Git
@@ -57,6 +58,11 @@ In your projects create some file .eslintrc.json and past the configurations bel
 }
 ```
 
+## Azure Data Studio
+[Download](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall#download-azure-data-studio) Azure Data Studio
+
+See how to install Mysql Data Extensions [here](https://learn.microsoft.com/en-us/azure-data-studio/extensions/mysql-extension)
+But you can search in the extension tab on the Azure Data Studio Editor
 
 ### Install Homebrew
 ```bash
