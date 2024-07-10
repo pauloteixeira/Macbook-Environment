@@ -67,46 +67,53 @@ But you can search in the extension tab on the Azure Data Studio Editor
 
 ### Install Homebrew
 ```vim
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 Configure the Environment variable
 ```vim
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-source ~/.zprofile
+$ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+$ source ~/.zprofile
 ```
 
 The seccond option is add the variable manualy into .zshrc file
 
 ### Intall Oh My Zsh
 ```vim
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### Configure Homebrew environment variable (If not added into .zprofile file)
 ```vim
-vim ~/.zshrc
+$ vim ~/.zshrc
+```
+Put the line below inside of the .zshrc file:
+```vim
 export PATH=/opt/homebrew/bin:$PATH
-source ~/.zshrc
+```
+
+Run the command:
+```vim
+$ source ~/.zshrc
 ```
 
 ### Install Git
 ```vim
-brew install git
+$ brew install git
 ```
 
 ### Install nvim
 ```vim
-brew install nvim
+$ brew install nvim
 ```
 
 ### Install Alacritty
 ```vim
-brew install --cask alacritty
+$ brew install --cask alacritty
 ```
 
 ### Install Meslo Nerd Font
 ```vim
-brew install font-meslo-lg-nerd-font
+$ brew install font-meslo-lg-nerd-font
 ```
 
 ## Setup Alacritty Config File
@@ -146,13 +153,13 @@ size = 12
 
 ### Install Powerlevel10k
 ```vim
-brew install powerlevel10k
+$ brew install powerlevel10k
 ```
 
 Add to path
 ```vim
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
-source ~/.zshrc
+$ echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+$ source ~/.zshrc
 ```
 
 The powerlevel10k configuration wizard should show up now.
@@ -166,12 +173,12 @@ Now we’ll setup the colorscheme.
 Navigate to ~/.config/alacritty
 
 ```vim
-cd ~/.config/alacritty
+$ cd ~/.config/alacritty
 ```
 
 Clone the Color Theme
 ```vim
-git clone https://github.com/alacritty/alacritty-theme themes
+$ git clone https://github.com/alacritty/alacritty-theme themes
 ```
 
 ### Add my coolnight theme to the themes folder
@@ -180,12 +187,12 @@ I’ve put together my own theme called coolnight, inspired by my previous iTerm
 
 You can add it to the themes directory with this command:
 ```vim
-curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/.config/alacritty/themes/themes/coolnight.toml --output ~/.config/alacritty/themes/themes/coolnight.toml
+$ curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/.config/alacritty/themes/themes/coolnight.toml --output ~/.config/alacritty/themes/themes/coolnight.toml
 ```
 
 Now open the alacritty.toml file with your editor of choice. With Neovim it would be:
 ```vim
-nvim alacritty.toml
+$ nvim alacritty.toml
 ```
 
 Add the folowing config into alacritty.toml file
@@ -243,9 +250,9 @@ bindkey '^[[B' history-search-forward
 
 ### Setup zsh-autosuggestions plugin
 ```vim
-brew install zsh-autosuggestions
-echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-source ~/.zshrc
+$ brew install zsh-autosuggestions
+$ echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+$ source ~/.zshrc
 ```
 
 ### Setup zsh-syntax-highlighting
@@ -254,74 +261,74 @@ This will provide some really nice syntax highlighting as you type out commands.
 
 Install it like so:
 ```vim
-brew install zsh-syntax-highlighting
-echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-source ~/.zshrc
+$ brew install zsh-syntax-highlighting
+$ echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+$ source ~/.zshrc
 ```
 
 ### Install eza (better ls)
 ```vim
-brew install eza
+$ brew install eza
 ```
 
 Create this alias in the bottom of the ~/.zshrc file
 ```vim
-nvim ~/.zshrc
+$ nvim ~/.zshrc
 ```
 And type the content below:
 ```vim
 # ---- Eza (better ls) -----
 
-alias ls="eza --icons=always"
+$ alias ls="eza --icons=always"
 ```
 
 ### Install zoxide (better cd)
 ```vim
-brew install zoxide
+$ brew install zoxide
 ```
 Create this alias in the bottom of the ~/.zshrc file
 ```vim
-nvim ~/.zshrc
+$ nvim ~/.zshrc
 ```
 And type the content below:
 ```vim
 # ---- Zoxide (better cd) ----
-eval "$(zoxide init zsh)"
+$ eval "$(zoxide init zsh)"
 
-alias cd="z"
+$ alias cd="z"
 ```
 
 Save and then run:
 ```vim
-source ~/.zshrc
+$ source ~/.zshrc
 ```
 
 
 ### Configure initialization
 ```vim
-code ~/.p10k.zsh
+$ code ~/.p10k.zsh
 ```
 
 Find the line:
 ```vim
- typeset -g POWERLEVEL9K_INSTANT_PROMPT
+$ typeset -g POWERLEVEL9K_INSTANT_PROMPT
 ```
 
 Change the value of this variable to off:
 ```vim
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+$ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 ```
 Restart the Alacritty.
 This line will fix the error on terminal initialization
 
 ### Install TMUX
 ```vim
-brew install tmux
+$ brew install tmux
 ```
 
 ### Install PHP
 ```vim
-brew intall php@8.3
+$ brew intall php@8.3
 ```
 
 ## Mac Configs
@@ -347,25 +354,25 @@ Choose Apple menu > System Settings, then click Control Center in the sidebar.
 Verify in the [package manager page](https://nodejs.org/en/download/package-manager) how is the current LTE Version
 ```vim
 # installs nvm (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 # reload zshrc
-source ~/.zshrc
+$ source ~/.zshrc
 
 # download and install Node.js (you may need to restart the terminal)
-nvm install 20
+$ nvm install 20
 
 # verifies the right Node.js version is in the environment
-node -v # should print `v20.15.0`
+$ node -v # should print `v20.15.0`
 
 # verifies the right NPM version is in the environment
-npm -v # should print `10.7.0`
+$ npm -v # should print `10.7.0`
 ```
 
 ## Generate SSH Key
 ```vim
-ssh-keygen -t rsa -b 4096 -C "pauloaugustot@gmail.com"
-``
+$ ssh-keygen -t rsa -b 4096 -C "pauloaugustot@gmail.com"
+```
 
 
 You’re Done!! 🚀
