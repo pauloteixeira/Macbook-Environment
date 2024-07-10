@@ -66,11 +66,11 @@ See how to install Mysql Data Extensions [here](https://learn.microsoft.com/en-u
 But you can search in the extension tab on the Azure Data Studio Editor
 
 ### Install Homebrew
-```bash
+```vim
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 Configure the Environment variable
-```bash
+```vim
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 source ~/.zprofile
 ```
@@ -78,39 +78,39 @@ source ~/.zprofile
 The seccond option is add the variable manualy into .zshrc file
 
 ### Intall Oh My Zsh
-```bash
+```vim
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### Configure Homebrew environment variable (If not added into .zprofile file)
-```bash
+```vim
 vim ~/.zshrc
 export PATH=/opt/homebrew/bin:$PATH
 source ~/.zshrc
 ```
 
 ### Install Git
-```bash
+```vim
 brew install git
 ```
 
 ### Install nvim
-```bash
+```vim
 brew install nvim
 ```
 
 ### Install Alacritty
-```bash
+```vim
 brew install --cask alacritty
 ```
 
 ### Install Meslo Nerd Font
-```bash
+```vim
 brew install font-meslo-lg-nerd-font
 ```
 
 ## Setup Alacritty Config File
-```bash
+```vim
 // Create config file
 mkdir -p ~/.config/alacritty
 cd ~/.config/alacritty
@@ -145,12 +145,12 @@ size = 12
 ```
 
 ### Install Powerlevel10k
-```bash
+```vim
 brew install powerlevel10k
 ```
 
 Add to path
-```bash
+```vim
 echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 source ~/.zshrc
 ```
@@ -165,12 +165,12 @@ Answer the prompts to make the theme look like you would like it to. For the col
 Now we’ll setup the colorscheme.
 Navigate to ~/.config/alacritty
 
-```bash
+```vim
 cd ~/.config/alacritty
 ```
 
 Clone the Color Theme
-```bash
+```vim
 git clone https://github.com/alacritty/alacritty-theme themes
 ```
 
@@ -179,17 +179,17 @@ git clone https://github.com/alacritty/alacritty-theme themes
 I’ve put together my own theme called coolnight, inspired by my previous iTerm2 theme.
 
 You can add it to the themes directory with this command:
-```bash
+```vim
 curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/.config/alacritty/themes/themes/coolnight.toml --output ~/.config/alacritty/themes/themes/coolnight.toml
 ```
 
 Now open the alacritty.toml file with your editor of choice. With Neovim it would be:
-```bash
+```vim
 nvim alacritty.toml
 ```
 
 Add the folowing config into alacritty.toml file
-```bash
+```vim
 import = [
     "~/.config/alacritty/themes/themes/coolnight.toml"
 ]
@@ -225,7 +225,7 @@ size = 12
 Let’s improve the history completion with the up and down arrows.
 
 Open ~/.zshrc and add the following to the bottom of this file:
-```ènv
+```vim
 # history setup
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
@@ -242,7 +242,7 @@ bindkey '^[[B' history-search-forward
 ```
 
 ### Setup zsh-autosuggestions plugin
-```bash
+```vim
 brew install zsh-autosuggestions
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 source ~/.zshrc
@@ -253,38 +253,38 @@ source ~/.zshrc
 This will provide some really nice syntax highlighting as you type out commands.
 
 Install it like so:
-```bash
+```vim
 brew install zsh-syntax-highlighting
 echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 source ~/.zshrc
 ```
 
 ### Install eza (better ls)
-```bash
+```vim
 brew install eza
 ```
 
 Create this alias in the bottom of the ~/.zshrc file
-```bash
+```vim
 nvim ~/.zshrc
 ```
 And type the content below:
-```bash
+```vim
 # ---- Eza (better ls) -----
 
 alias ls="eza --icons=always"
 ```
 
 ### Install zoxide (better cd)
-```bash
+```vim
 brew install zoxide
 ```
 Create this alias in the bottom of the ~/.zshrc file
-```bash
+```vim
 nvim ~/.zshrc
 ```
 And type the content below:
-```bash
+```vim
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 
@@ -292,35 +292,35 @@ alias cd="z"
 ```
 
 Save and then run:
-```bash
+```vim
 source ~/.zshrc
 ```
 
 
 ### Configure initialization
-```bash
+```vim
 code ~/.p10k.zsh
 ```
 
 Find the line:
-```bash
+```vim
  typeset -g POWERLEVEL9K_INSTANT_PROMPT
 ```
 
 Change the value of this variable to off:
-```bash
+```vim
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 ```
 Restart the Alacritty.
 This line will fix the error on terminal initialization
 
 ### Install TMUX
-```bash
+```vim
 brew install tmux
 ```
 
 ### Install PHP
-```bash
+```vim
 brew intall php@8.3
 ```
 
@@ -345,7 +345,7 @@ Choose Apple menu > System Settings, then click Control Center in the sidebar.
 
 ## Install NodeJS
 Verify in the [package manager page](https://nodejs.org/en/download/package-manager) how is the current LTE Version
-```bash
+```vim
 # installs nvm (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
@@ -363,7 +363,7 @@ npm -v # should print `10.7.0`
 ```
 
 ## Generate SSH Key
-```bash
+```vim
 ssh-keygen -t rsa -b 4096 -C "pauloaugustot@gmail.com"
 ``
 
