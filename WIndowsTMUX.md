@@ -49,15 +49,60 @@ Install tmux using the following command:
 pacman -S tmux
 ```
 
-Go to msys2 directory, in my case it is
+## INSTALL GIT
 ```VIM
-C:\msys64\usr\bin
+pacman -S git
 ```
-Copy all files from mys64 user bin directory to ```C:\Program Files\Git\usr\bin```.
+
+## INSTALL FONTS
+Download this font: [MesloLGS Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip) and install then
+
+With the right click on top of the terminal windows, you can configure the fonts
 
 ## INSTALL ZSH
 ```vim
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## INSTALL POWERLEVEL10K THEME
+Download the theme powerlevel10k to the directory: ```/c/msys64/home/paulo.teixeira/.oh-my-zsh/themes/```
+```vim
+$ git clone https://github.com/romkatv/powerlevel10k.git
+```
+
+On the ```.zshrc``` file change the theme:
+```vim
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+Run the p10k configuration:
+```vim
+$ zsh
+```
+
+## INSTALL PLUGINS
+```VIM
+$ git clone https://github.com/zsh-users/zsh-autosuggestions /c/msys64/home/paulo.teixeira/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /c/msys64/home/paulo.teixeira/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+In the .zshrc file change the plugin line to:
+```vim
+plugins=(
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
+```
+
+In the bottom of the .zshrc file put this lines:
+```vim
+# Verifica se o terminal é interativo antes de iniciar tmux
+bash zsh
+if [[ $- == *i* ]]; then
+  tmux
+  cd /c/Users/paulo.teixeira/Documents
+  clear
+fi
 ```
 
 All it's done!
