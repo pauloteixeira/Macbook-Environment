@@ -55,5 +55,10 @@ C:\msys64\usr\bin
 ```
 Copy all files from mys64 user bin directory to ```C:\Program Files\Git\usr\bin```.
 
+## INSTALL ZSH
+```vim
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 All it's done!
 
