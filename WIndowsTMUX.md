@@ -97,7 +97,7 @@ plugins=(
 ## ADDING VSCODE AND PHP PATHS TO THE ,ZSHRC FILE
 Assuming you already have installed php and vscode you need to add this paths below in to ```.zshrc``` file:
 ```vim
-PATH=/c/Users/paulo.teixeira/AppData/Local/Programs/'Microsoft VS Code'/bin:$PATH
+PATH=/c/Users/[user.name]/AppData/Local/Programs/'Microsoft VS Code'/bin:$PATH
 PATH=/c/php:$PATH
 ```
 
@@ -112,7 +112,7 @@ In the bottom of the .zshrc file put this lines:
 bash zsh
 if [[ $- == *i* ]]; then
   tmux
-  cd /c/Users/paulo.teixeira/Documents
+  cd /c/Users/[user.name]/Documents
   clear
 fi
 ```
