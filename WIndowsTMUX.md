@@ -94,6 +94,18 @@ plugins=(
 )
 ```
 
+## ADDING VSCODE AND PHP PATHS TO THE ,ZSHRC FILE
+Assuming you already have installed php and vscode you need to add this paths below in to ```.zshrc``` file:
+```vim
+PATH=/c/Users/paulo.teixeira/AppData/Local/Programs/'Microsoft VS Code'/bin:$PATH
+PATH=/c/php:$PATH
+```
+
+## CONFIGURE THE .ZSHRC FILE TO START THE POWERLEVEL10K, TMUX AND GO TO THE MAIN FOLDER LOCATION
+The msys2 is configured inside a own folder, so when the app open, its opened in the folder: /c/msys64/home/[user.name].
+And i like to work in /c/Users/[user.name]/Documents/www, so, I had to create this command below to enter in my root path location.
+And the msys2 its crached some error when zsh initialize. So i need to create some command to enter in the zsh after initialization.
+
 In the bottom of the .zshrc file put this lines:
 ```vim
 # Verifica se o terminal é interativo antes de iniciar tmux
