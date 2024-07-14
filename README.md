@@ -16,6 +16,7 @@
 - zoxide (better cd)
 - TMUX
 - Install PHP 8.3
+- Install composer
 - Mac Configs
 - - Show battery percentage
   - Drag window with three fingers
@@ -329,6 +330,11 @@ $ brew install tmux
 ### Install PHP
 ```vim
 $ brew intall php@8.3
+```
+
+### Install Composer
+```vim
+$ brew install composer
 ```
 
 ## Mac Configs
