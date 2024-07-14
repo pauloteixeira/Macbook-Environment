@@ -46,21 +46,10 @@
 
 ### Install Prettier
 Install Prettier and enable "format on save" Settings>Settings Type format and check the item to format when save.
-In your projects create some file .eslintrc.json and past the configurations below:
-```json
-{
-    "extends": ["airbnb", "prettier", "plugin:node/recommended"],
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": "error",
-        "no-unused-vars": "warn",
-        "no-console": "off",
-        "func-names": "off",
-        "no-process-exit": "off",
-        "object-shorthand": "off"
-    }
-}
-```
+In the Prettier installation screen click to go to settings and change the property "Fil code within this line limit. to 140;
+![Screenshot 2024-07-14 at 17 45 35](https://github.com/user-attachments/assets/981f46ca-4b56-43ce-a038-8699edcd348e)
+
+
 
 ## Azure Data Studio
 [Download](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall#download-azure-data-studio) Azure Data Studio
