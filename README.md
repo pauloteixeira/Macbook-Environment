@@ -22,6 +22,7 @@
   - Drag window with three fingers
   - Remove mount external drive icon from desktop
 - Install NodeJs
+- Install Yarn
 - Generate SSH Key
 
 ### Add shell function to VSCode
@@ -373,6 +374,11 @@ $ node -v # should print `v20.15.0`
 
 # verifies the right NPM version is in the environment
 $ npm -v # should print `10.7.0`
+```
+
+## Install Yarn
+```vim
+$ npm install --global yarn
 ```
 
 ## Generate SSH Key
