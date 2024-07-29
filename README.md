@@ -43,6 +43,7 @@
 - Markdown Preview Enhanced
 - Thunder Client
 - Material Theme Icons
+- Github Pullrequests (not installed at this moment)
 
 ### Install Prettier
 Install Prettier and enable "format on save" Settings>Settings Type format and check the item to format when save.
