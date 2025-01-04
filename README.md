@@ -15,6 +15,7 @@
 - eza (better ls)
 - zoxide (better cd)
 - TMUX
+- Config terminal initialization
 - Install PHP 8.3
 - Install composer
 - Mac Configs
@@ -279,6 +280,7 @@ $ alias ls="eza --icons=always"
 ```vim
 $ brew install zoxide
 ```
+
 Create this alias in the bottom of the ~/.zshrc file
 ```vim
 $ nvim ~/.zshrc
@@ -290,7 +292,26 @@ $ eval "$(zoxide init zsh)"
 
 $ alias cd="z"
 ```
+Save and then run:
+```vim
+$ source ~/.zshrc
+```
 
+### Install TMUX
+```vim
+$ brew install tmux
+```
+
+### Config terminal initialization
+```vim
+# ---- Initialization term ----
+if [[ $- == *i* ]]; then
+        cd /Volumes/SSD-A400-480GB/Documents/www
+fi
+
+tmux
+clear
+```
 Save and then run:
 ```vim
 $ source ~/.zshrc
@@ -313,11 +334,6 @@ $ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 ```
 Restart the Alacritty.
 This line will fix the error on terminal initialization
-
-### Install TMUX
-```vim
-$ brew install tmux
-```
 
 ### Install PHP
 ```vim
