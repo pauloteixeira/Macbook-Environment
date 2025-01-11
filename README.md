@@ -18,6 +18,7 @@
 - Config terminal initialization
 - Install PHP 8.3
 - Install composer
+- Install xDebug
 - Mac Configs
 - - Show battery percentage
   - Drag window with three fingers
@@ -344,6 +345,18 @@ $ brew intall php@8.3
 ```vim
 $ brew install composer
 ```
+
+### Install PHP xDebug
+If xcode not installed yet run the command bellow *(Ignore php.ini xdebug entrance. Don't need it.)
+```vim
+$ xcode-select --install
+```
+
+With xcode installed you can install the xDebug with the command bellow
+```vim
+$ pecl install xdebug
+```
+
 
 ## Mac Configs
 ### Show battery percebtagen
