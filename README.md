@@ -34,6 +34,7 @@
 
 ### VSCode extensions
 - Code Runner
+- Vetur
 - Dracula Official
 - PHP Inteliphense
 - PHP Extension Pack
