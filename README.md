@@ -16,6 +16,7 @@
 - zoxide (better cd)
 - TMUX
 - Config terminal initialization
+- Install Terminal Warp
 - Install PHP 8.3
 - Install composer
 - Install xDebug
@@ -336,6 +337,11 @@ $ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 ```
 Restart the Alacritty.
 This line will fix the error on terminal initialization
+
+### Install Terminal Warp
+```vim
+$ brew install --cask warp
+```
 
 ### Install PHP
 ```vim
