@@ -410,7 +410,7 @@ $ npm install --global yarn
 
 ## Generate SSH Key
 ```vim
-$ ssh-keygen -t rsa -b 4096 -C "pauloaugustot@gmail.com"
+$ ssh-keygen -t rsa -b 4096 -C "youremail@gmail.com"
 ```
 
 
