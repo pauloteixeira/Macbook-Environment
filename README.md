@@ -165,6 +165,12 @@ If you want to open the wizard manually do: p10k configure.
 
 Answer the prompts to make the theme look like you would like it to. For the colors of my coolnight theme to work use either lean (with the 8 colors option) or rainbow
 
+### Prevent branch shorten name
+In the terminal open the ~./p10k.zsh file find and comment the line bellow
+```vim
+(( $#branch > 32 )) && branch[13,-13]="…"
+```
+
 ### Setup the colorscheme for powerlevel10k and the terminal
 Now we’ll setup the colorscheme.
 Navigate to ~/.config/alacritty
