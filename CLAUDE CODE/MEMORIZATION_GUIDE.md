@@ -5,7 +5,7 @@ Via terminar execute um comando como (dentro da past: cd ~/Documents/www/.mempal
 
 ```vim
 cat <<'EOF' > mem_SUBJECT_NAME.md
-# Config Tax Rules API — Architecture and Business Rules
+# [doctor-nfse] Config Tax Rules API — Architecture and Business Rules
 
 ## Summary
 We implemented a backend API for managing config_tax_rules scoped under professional and company.
@@ -42,7 +42,7 @@ E quando fizer seus prompts no modo agente use algo como: `Search mempalace memo
 
 Save this as a long-term project memory.
 
-Title: Config Tax Rules API — Architecture and Business Rules
+Title: [doctor-nfse] Config Tax Rules API — Architecture and Business Rules
 
 Summary:
 We implemented a backend API for managing config_tax_rules scoped under professional and company.
