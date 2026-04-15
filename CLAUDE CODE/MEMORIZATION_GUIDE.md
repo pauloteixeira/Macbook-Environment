@@ -1,6 +1,38 @@
 # MEMORIZATION GUIDE
 Abaixo tem uma meneira de adicionar a memoria no mempalace sem precisar consumir tokens.
 
+## HACKS TO IMPROVE THE MEMPALACE ITERACTION
+Use this both prompts on the AI Agent:
+
+### CREATE AN INTERNAL MEMORY WITH INSTRUCTION TO USE MEMPALACE
+```text
+Create a internal memory for you and add a new memory entry with the necessary knology to use mempalace.
+The ideia is you don't neet to discovery how to lead with mempalace search instruction with global discovery but you can find in your internal memory and find it easy with less token is possible.
+```
+
+### UPDATE INTERNAL MEMORY WITH THE FORMAT OF MEMORY ENTRIES
+```text
+Add in the internal memory this format that need to be used to create the memory:
+# [{project name tag}] {title}
+
+## Summary
+{objective and clear summary}
+
+## Key decisions
+{list of key decisions}
+
+## Important details
+{important and detailed details}
+
+## Why this matters
+{why this metters}
+
+## Tags
+{tags with "#" prefix e.g. #tag-name }
+
+The entry format aways need to be in MarkDown.
+```
+
 Via terminar execute um comando como (dentro da past: cd ~/Documents/www/.mempalace/notes/nfse):
 
 ```vim
